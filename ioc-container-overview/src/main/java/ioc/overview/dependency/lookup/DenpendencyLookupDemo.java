@@ -55,7 +55,7 @@ public class DenpendencyLookupDemo {
     }
 
     private static void lookupInLazy(BeanFactory beanFactory) {
-        ObjectFactory<User> objectFactory = (ObjectFactory) beanFactory.getBean("objectFactory");
+        ObjectFactory<User> objectFactory = (ObjectFactory<User>) beanFactory.getBean("objectFactory");
         User user = objectFactory.getObject();
         System.out.println("延时查找" + user);
     }
